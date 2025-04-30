@@ -6,187 +6,243 @@
   <title>Bus Route Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #3498db;
-      --dark: #2c3e50;
-      --bg: #f4f7fa;
-      --white: #fff;
-    }
+    /* Core Styles (Mobile-First Approach) */
+:root {
+  --primary: #ffffff;
+  --dark: #2c3e50;
+  --bg: #f4f7fa;
+  --white: #fff;
+}
+/* Stylish header */
+.main-header {
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: white;
+  padding: 1rem;
+  border-bottom: 3px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-    * {
-      box-sizing: border-box;
-    }
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--dark);
-    }
+.logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
 
-    h1 {
-      text-align: center;
-      padding: 20px;
-      font-size: 2.5rem;
-      color: var(--primary);
-    }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
 
-    .search-box {
-      background: var(--white);
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
+/* Stylish footer */
+.main-footer {
+  background: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
 
-    label {
-      font-weight: 600;
-      display: block;
-      margin: 15px 0 5px;
-    }
+.main-footer a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
 
-    select, input {
-      width: 100%;
-      padding: 12px;
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      transition: 0.3s;
-    }
+.main-footer a:hover {
+  text-decoration: underline;
+}
 
-    select:focus, input:focus {
-      border-color: var(--primary);
-      outline: none;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    button {
-      width: 100%;
-      padding: 14px;
-      font-size: 16px;
-      background: linear-gradient(to right, #3498db, #1abc9c);
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+  padding: 0 10px;
+}
 
-    button:hover {
-      transform: scale(1.03);
-    }
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--primary);
+}
 
-    .results {
-      margin-top: 30px;
-    }
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 15px;
+}
 
-    .bus-card {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      margin-bottom: 25px;
-      padding: 20px;
-      overflow: hidden;
-    }
+.search-box {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .bus-info {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
 
-    .bus-image {
-      flex: 0 0 100px;
-      height: 60px;
-      background: url('https://cdn-icons-png.flaticon.com/512/69/69944.png') center/cover no-repeat;
-      border-radius: 8px;
-    }
+select, input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
 
-    .bus-details {
-      flex: 1;
-    }
+select:focus, input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
 
-    .bus-details h3 {
-      margin: 0 0 5px;
-      font-size: 20px;
-      color: var(--dark);
-    }
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #3498db, #1abc9c);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
-    .bus-details p {
-      margin: 5px 0;
-      color: #555;
-    }
+button:hover {
+  transform: scale(1.03);
+}
 
-    .map-route {
+/* Results */
+.results {
+  margin-top: 25px;
+}
+
+.bus-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  padding: 16px;
+}
+
+.bus-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bus-image {
+  width: 100%;
+  max-width: 100px;
+  height: 60px;
+  background: url('https://cdn-icons-png.flaticon.com/512/69/69944.png') center/cover no-repeat;
+  border-radius: 8px;
+}
+
+.bus-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+.bus-details p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* Route Timeline */
+.map-route {
   position: relative;
   margin-top: 20px;
-  padding-left: 20px; /* extra space for the vertical line */
+  padding-left: 25px;
 }
 
 .stop {
   position: relative;
-  padding: 10px 20px;
-  margin: 30px 0;
-  width: fit-content;
-  max-width: 80%;
-  background-color: #fff;
+  background: var(--white);
+  padding: 12px;
+  margin: 20px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .stop::before {
   content: '';
   position: absolute;
-  top: 10px;
-  left: -28px;
+  top: 12px;
+  left: -20px;
   width: 12px;
   height: 12px;
   background: var(--primary);
   border-radius: 50%;
-  z-index: 1;
 }
 
-/* vertical line via ::after */
 .map-route::after {
   content: '';
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
   width: 4px;
   height: 100%;
   background: var(--primary);
   border-radius: 2px;
 }
 
-    @media (max-width: 600px) {
-      .bus-info {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+/* Media Queries */
+@media (min-width: 600px) {
+  .bus-info {
+    flex-direction: row;
+    align-items: center;
+  }
 
-      .bus-image {
-        width: 100%;
-      }
+  .bus-image {
+    flex: 0 0 100px;
+    height: 60px;
+  }
 
-      .bus-details {
-        width: 100%;
-      }
-    }
+  .bus-details {
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  select, input, button {
+    font-size: 1.1rem;
+  }
+}
   </style>
 </head>
 <body>
-
-  <h1>🚌 Bus Route Finder</h1>
-
+  <header class="main-header">
+    <div class="header-content">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h1>WEST BENGAL BUS UPDATE 🚌✨</h1>
+    </div>
+  </header>
+  
   <div class="container">
     <div class="search-box">
       <label for="searchType">Search By:</label>
@@ -227,6 +283,11 @@
 
     <div class="results" id="results"></div>
   </div>
+  <footer class="main-footer">
+    <p>&copy; 2025 Smart Travel System</p>
+    <p><a href="#">❤️Developed By Tanay</a> | <a href="#">Contact Us: "https://chat.whatsapp.com/FUtipZViLgUFCRChUXYsWx" </a></p>
+  </footer>
+  
 
   <script>
   const busRoutes = [
