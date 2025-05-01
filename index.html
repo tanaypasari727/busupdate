@@ -285,278 +285,304 @@ button:hover {
   </div>
   <footer class="main-footer">
     <p>&copy; 2025 Smart Travel System</p>
-    <p><a href="#">❤️Developed By Tanay</a> | <a href="#">Contact Us: "https://chat.whatsapp.com/FUtipZViLgUFCRChUXYsWx" </a></p>
+    <p><a href="#">❤️Developed By Tanay</a> | <a href="https://chat.whatsapp.com/FUtipZViLgUFCRChUXYsWx" target="_blank" style="text-decoration: none; color: #007bff;">
+      Contact Us
+    </a></p>
   </footer>
   
 
   <script>
-  const busRoutes = [
-  {
-    busNumber: "WB11C5920",
-    busName: "Biswabina",
-    contact: "+91-8167321465",
-    image: "https://scontent.fccu25-1.fna.fbcdn.net/v/t39.30808-6/480749297_1030054155613240_7465941670769110655_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=WyFff9VrDGEQ7kNvwGq0KJz&_nc_oc=AdnFA8mOolcjgXnL4DF3UM1CjOWXwVEXSCPqe14fdU9YmCxxwfx9kVdN2qoeT2Lp91-NLy3la1DqtIUcG_Q2PgeQ&_nc_zt=23&_nc_ht=scontent.fccu25-1.fna&_nc_gid=JLfN5uf9JMcOy7c-3w6Vzw&oh=00_AfHMm8zaqbkVWXXZHgEFkcqSCDU3Iey_G17T1PjAR8muyw&oe=68185F28", // Add image URL
-    notice: "Garhbeta-Kolkata Station",
-    route: [
-      { stop: "Garhbeta", time: "11:40 AM" },
-      { stop: "Panikotor", time: "NULL" },
-      { stop: "Raskundu", time: "NULL" },
-      { stop: "Chandrakona Town", time: "NULL" },
-      { stop: "Khirpai", time: "NULL" },
-      { stop: "Barda Chowkan", time: "NULL" },
-      { stop: "Ghatal", time: "01:25 PM" },
-      { stop: "Daspur", time: "NULL" },
-      { stop: "Sultan Nagar", time: "NULL" },
-      { stop: "Goura", time: "NULL" },
-      { stop: "Khukurdaha", time: "NULL" },
-      { stop: "Keshapat", time: "NULL" },
-      { stop: "Mechogram", time: "NULL" },
-      { stop: "Sidha", time: "NULL" },
-      { stop: "Deulia Bazar", time: "NULL" },
-      { stop: "Kolaghat", time: "NULL" },
-      { stop: "Bagnan", time: "NULL" },
-      { stop: "Uluberia (Nimdighi)", time: "NULL" },
-      { stop: "Dhulagarh", time: "NULL" },
-      { stop: "Kona Expressway", time: "NULL" },
-      { stop: "Salap", time: "NULL" },
-      { stop: "Bally Hault", time: "NULL" },
-      { stop: "Dakshineswar", time: "NULL" },
-      { stop: "Dunlop", time: "NULL" },
-      { stop: "Sinthi More", time: "NULL" },
-      { stop: "Shyambazar", time: "NULL" },
-      { stop: "Kolkata Station", time: "5:10 PM" }
-    ]
-  },
-  {
-    busNumber: "WB11C5920",
-    busName: "Biswabina",
-    contact: "+91-8167321465",
-    image: "https://scontent.fccu25-1.fna.fbcdn.net/v/t39.30808-6/480749297_1030054155613240_7465941670769110655_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=WyFff9VrDGEQ7kNvwGq0KJz&_nc_oc=AdnFA8mOolcjgXnL4DF3UM1CjOWXwVEXSCPqe14fdU9YmCxxwfx9kVdN2qoeT2Lp91-NLy3la1DqtIUcG_Q2PgeQ&_nc_zt=23&_nc_ht=scontent.fccu25-1.fna&_nc_gid=JLfN5uf9JMcOy7c-3w6Vzw&oh=00_AfHMm8zaqbkVWXXZHgEFkcqSCDU3Iey_G17T1PjAR8muyw&oe=68185F28", // Add image URL
-    notice: "Kolkata Station-Garhbeta",
-    route: [
-  { "stop": "Kolkata Station", "time": "5:25 AM" },
-  { "stop": "Shyambazar", "time": "NULL" },
-  { "stop": "Sinthi More", "time": "5:45 AM" },
-  { "stop": "Dunlop", "time": "5:50 AM" },
-  { "stop": "Dakshineswar", "time": "NULL" },
-  { "stop": "Bally Hault", "time": "NULL" },
-  { "stop": "Salap", "time": "NULL" },
-  { "stop": "Kona Expressway", "time": "NULL" },
-  { "stop": "Dhulagarh", "time": "NULL" },
-  { "stop": "Uluberia (Nimdighi)", "time": "NULL" },
-  { "stop": "Bagnan", "time": "NULL" },
-  { "stop": "Kolaghat", "time": "NULL" },
-  { "stop": "Deulia Bazar", "time": "NULL" },
-  { "stop": "Sidha", "time": "NULL" },
-  { "stop": "Mechogram", "time": "NULL" },
-  { "stop": "Keshapat", "time": "NULL" },
-  { "stop": "Khukurdaha", "time": "NULL" },
-  { "stop": "Goura", "time": "NULL" },
-  { "stop": "Sultan Nagar", "time": "NULL" },
-  { "stop": "Daspur", "time": "NULL" },
-  { "stop": "Ghatal", "time": "01:25 PM" },
-  { "stop": "Barda Chowkan", "time": "NULL" },
-  { "stop": "Khirpai", "time": "NULL" },
-  { "stop": "Chandrakona Town", "time": "NULL" },
-  { "stop": "Raskundu", "time": "NULL" },
-  { "stop": "Panikotor", "time": "NULL" },
-  { "stop": "Garhbeta", "time": "10:40 AM" }
-    ]
-  },
-  {
-    busNumber: "303",
-    busName: "Metro Shuttle",
-    contact: "+91-9988776655",
-    image: "https://example.com/metro-shuttle.jpg", // Add image URL
-    notice: "No Update",
-    route: [
-      { stop: "A", time: "05:30 PM" },
-      { stop: "D", time: "06:15 PM" },
-      { stop: "E", time: "07:00 PM" }
-    ]
-  }
-];
-
-
-  const sourceSelect = document.getElementById("source");
-  const destinationSelect = document.getElementById("destination");
-  const searchTypeSelect = document.getElementById("searchType");
-  const resultsDiv = document.getElementById("results");
-
-  function updateSearchForm() {
-    const searchType = searchTypeSelect.value;
-    document.querySelectorAll(".search-type").forEach(div => div.style.display = "none");
-    if (searchType === "source-destination") {
-      document.getElementById("sourceDestinationSearch").style.display = "block";
-    } else if (searchType === "bus-name") {
-      document.getElementById("busNameSearch").style.display = "block";
-    } else if (searchType === "bus-number") {
-      document.getElementById("busNumberSearch").style.display = "block";
+    const busRoutes = [
+    {
+      busNumber: "WB11C5920",
+      busName: "BISWABINA",
+      contact: "+91-8167321465",
+      image: "https://scontent.fccu25-1.fna.fbcdn.net/v/t39.30808-6/480749297_1030054155613240_7465941670769110655_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=WyFff9VrDGEQ7kNvwGq0KJz&_nc_oc=AdnFA8mOolcjgXnL4DF3UM1CjOWXwVEXSCPqe14fdU9YmCxxwfx9kVdN2qoeT2Lp91-NLy3la1DqtIUcG_Q2PgeQ&_nc_zt=23&_nc_ht=scontent.fccu25-1.fna&_nc_gid=JLfN5uf9JMcOy7c-3w6Vzw&oh=00_AfHMm8zaqbkVWXXZHgEFkcqSCDU3Iey_G17T1PjAR8muyw&oe=68185F28", // Add image URL
+      notice: "Garhbeta-Kolkata Station",
+      route: [
+        { stop: "Garhbeta", time: "11:40 AM" },
+        { stop: "Panikotor", time: "NULL" },
+        { stop: "Raskundu", time: "NULL" },
+        { stop: "Chandrakona Town", time: "NULL" },
+        { stop: "Khirpai", time: "NULL" },
+        { stop: "Barda Chowkan", time: "NULL" },
+        { stop: "Ghatal", time: "01:25 PM" },
+        { stop: "Daspur", time: "NULL" },
+        { stop: "Sultan Nagar", time: "NULL" },
+        { stop: "Goura", time: "NULL" },
+        { stop: "Khukurdaha", time: "NULL" },
+        { stop: "Keshapat", time: "NULL" },
+        { stop: "Mechogram", time: "NULL" },
+        { stop: "Sidha", time: "NULL" },
+        { stop: "Deulia Bazar", time: "NULL" },
+        { stop: "Kolaghat", time: "NULL" },
+        { stop: "Bagnan", time: "NULL" },
+        { stop: "Uluberia (Nimdighi)", time: "NULL" },
+        { stop: "Dhulagarh", time: "NULL" },
+        { stop: "Kona Expressway", time: "NULL" },
+        { stop: "Salap", time: "NULL" },
+        { stop: "Bally Hault", time: "NULL" },
+        { stop: "Dakshineswar", time: "NULL" },
+        { stop: "Dunlop", time: "NULL" },
+        { stop: "Sinthi More", time: "NULL" },
+        { stop: "Shyambazar", time: "NULL" },
+        { stop: "Kolkata Station", time: "5:10 PM" }
+      ]
+    },
+    {
+      busNumber: "WB11C5920",
+      busName: "BISWABINA",
+      contact: "+91-8167321465",
+      image: "https://scontent.fccu25-1.fna.fbcdn.net/v/t39.30808-6/480749297_1030054155613240_7465941670769110655_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=WyFff9VrDGEQ7kNvwGq0KJz&_nc_oc=AdnFA8mOolcjgXnL4DF3UM1CjOWXwVEXSCPqe14fdU9YmCxxwfx9kVdN2qoeT2Lp91-NLy3la1DqtIUcG_Q2PgeQ&_nc_zt=23&_nc_ht=scontent.fccu25-1.fna&_nc_gid=JLfN5uf9JMcOy7c-3w6Vzw&oh=00_AfHMm8zaqbkVWXXZHgEFkcqSCDU3Iey_G17T1PjAR8muyw&oe=68185F28", // Add image URL
+      notice: "Kolkata Station-Garhbeta",
+      route: [
+    { "stop": "Kolkata Station", "time": "5:25 AM" },
+    { "stop": "Shyambazar", "time": "NULL" },
+    { "stop": "Sinthi More", "time": "5:45 AM" },
+    { "stop": "Dunlop", "time": "5:50 AM" },
+    { "stop": "Dakshineswar", "time": "NULL" },
+    { "stop": "Bally Hault", "time": "NULL" },
+    { "stop": "Salap", "time": "NULL" },
+    { "stop": "Kona Expressway", "time": "NULL" },
+    { "stop": "Dhulagarh", "time": "NULL" },
+    { "stop": "Uluberia (Nimdighi)", "time": "NULL" },
+    { "stop": "Bagnan", "time": "NULL" },
+    { "stop": "Kolaghat", "time": "NULL" },
+    { "stop": "Deulia Bazar", "time": "NULL" },
+    { "stop": "Sidha", "time": "NULL" },
+    { "stop": "Mechogram", "time": "NULL" },
+    { "stop": "Keshapat", "time": "NULL" },
+    { "stop": "Khukurdaha", "time": "NULL" },
+    { "stop": "Goura", "time": "NULL" },
+    { "stop": "Sultan Nagar", "time": "NULL" },
+    { "stop": "Daspur", "time": "NULL" },
+    { "stop": "Ghatal", "time": "01:25 PM" },
+    { "stop": "Barda Chowkan", "time": "NULL" },
+    { "stop": "Khirpai", "time": "NULL" },
+    { "stop": "Chandrakona Town", "time": "NULL" },
+    { "stop": "Raskundu", "time": "NULL" },
+    { "stop": "Panikotor", "time": "NULL" },
+    { "stop": "Garhbeta", "time": "10:40 AM" }
+      ]
+    },
+    {
+      busNumber: "WB33F0631",
+      busName: "SHREEDHARJEW",
+      contact: "+91-𝟗𝟓𝟑𝟏𝟓𝟓𝟒𝟎𝟓𝟏",
+      image: "https://scontent.fccu4-2.fna.fbcdn.net/v/t39.30808-6/476165566_1366201644748878_1426061261640523660_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=GPfX4416bYUQ7kNvwGYOBVX&_nc_oc=Adl5kkLgJtWw1CklbuOOgwa7tEK0014M8SON0GFWiimpV5-pDBQeyFdV4k95rIF2gl2XMGGuurOBbYRjOmEtgpdi&_nc_zt=23&_nc_ht=scontent.fccu4-2.fna&_nc_gid=vJv1mz4z44S49tNAU35QhA&oh=00_AfEXOUqJbLRIYuuqkaq4LSWbli-muJ3cCfpw4H_NEG6f5A&oe=6818FEF5", // Add image URL
+      notice: "Baruipur-Garhbeta(Now run between Baruipur-Chandrakona Town)",
+      route: [
+    { "stop": "Baruipur", "time": "06:50 AM" },
+    { "stop": "Dhalai Bridge", "time": "07:10 AM" },
+    { "stop": "Santoshpur", "time": "07:25 AM" },
+    { "stop": "Hazra", "time": "07:35 AM" },
+    { "stop": "Rabindra Sadan (Exide More)", "time": "07:45 AM" },
+    { "stop": "Vidyasagar Setu(2nd Hooghly Bridge)", "time": "07:55 AM" },
+    { "stop": "Santragachi", "time": "08:10 AM" },
+    { "stop": "Kona Expressway", "time": "NULL" },
+    { "stop": "Dhulagarh", "time": "NULL" },
+    { "stop": "Uluberia (Nimdighi)", "time": "NULL" },
+    { "stop": "Bagnan", "time": "09:00 AM" },
+    { "stop": "Kolaghat", "time": "NULL" },
+    { "stop": "Deulia Bazar", "time": "NULL" },
+    { "stop": "Sidha", "time": "NULL" },
+    { "stop": "Mechogram", "time": "09:30 AM" },
+    { "stop": "Keshapat", "time": "NULL" },
+    { "stop": "Khukurdaha", "time": "NULL" },
+    { "stop": "Goura", "time": "09:55 AM" },
+    { "stop": "Sultan Nagar", "time": "NULL" },
+    { "stop": "Daspur", "time": "10:15 AML" },
+    { "stop": "Ghatal", "time": "10:30 AM" },
+    { "stop": "Barda Chowkan", "time": "NULL" },
+    { "stop": "Khirpai", "time": "11:15 AM" },
+    { "stop": "Chandrakona Town", "time": "11:30 AM" },
+    { "stop": "Raskundu", "time": "11:45 AM" },
+    { "stop": "Panikotor", "time": "11:47 AM" },
+    { "stop": "Garhbeta", "time": "12:10 AM" }
+      ]
     }
+  ];
+  
+  
+    const sourceSelect = document.getElementById("source");
+    const destinationSelect = document.getElementById("destination");
+    const searchTypeSelect = document.getElementById("searchType");
+    const resultsDiv = document.getElementById("results");
+  
+    function updateSearchForm() {
+      const searchType = searchTypeSelect.value;
+      document.querySelectorAll(".search-type").forEach(div => div.style.display = "none");
+      if (searchType === "source-destination") {
+        document.getElementById("sourceDestinationSearch").style.display = "block";
+      } else if (searchType === "bus-name") {
+        document.getElementById("busNameSearch").style.display = "block";
+      } else if (searchType === "bus-number") {
+        document.getElementById("busNumberSearch").style.display = "block";
+      }
+    }
+  
+    function populateStops() {
+      const stops = [...new Set(busRoutes.flatMap(bus => bus.route.map(r => r.stop)))];
+      stops.forEach(stop => {
+        const option1 = document.createElement("option");
+        option1.textContent = stop;
+        const option2 = option1.cloneNode(true);
+        sourceSelect.appendChild(option1);
+        destinationSelect.appendChild(option2);
+      });
+    }
+  
+    function getTimePeriod(timeStr) {
+      const [hourStr, minutePart] = timeStr.split(":");
+      const hour = parseInt(hourStr);
+      const isPM = minutePart.includes("PM");
+  
+      const militaryHour = isPM ? (hour % 12) + 12 : (hour % 12);
+      if (militaryHour >= 5 && militaryHour < 12) return "morning";
+      if (militaryHour >= 12 && militaryHour < 17) return "afternoon";
+      if (militaryHour >= 17 && militaryHour <= 22) return "evening";
+      return "other";
+    }
+  
+    function searchRoutes() {
+    const searchType = searchTypeSelect.value;
+    const timeFilter = document.getElementById("timeFilter").value;
+    let filtered = [];
+  
+    if (searchType === "source-destination") {
+      const source = sourceSelect.value;
+      const destination = destinationSelect.value;
+  
+      filtered = busRoutes
+        .map(bus => {
+          const stops = bus.route.map(r => r.stop);
+          const srcIdx = stops.indexOf(source);
+          const destIdx = stops.indexOf(destination);
+          if (srcIdx !== -1 && destIdx !== -1 && srcIdx < destIdx) {
+            // Add computed data
+            const startTime = convertToMinutes(bus.route[srcIdx].time);
+            const endTime = convertToMinutes(bus.route[destIdx].time);
+            return {
+              ...bus,
+              stopCount: destIdx - srcIdx,
+              duration: endTime - startTime,
+              srcIdx,
+              destIdx
+            };
+          }
+          return null;
+        })
+        .filter(bus => bus !== null);
+  
+    } else if (searchType === "bus-name") {
+      const busName = document.getElementById("busName").value.trim().toLowerCase();
+      filtered = busRoutes.filter(bus => bus.busName.toLowerCase().includes(busName));
+  
+    } else if (searchType === "bus-number") {
+      const busNumber = document.getElementById("busNumber").value.trim();
+      filtered = busRoutes.filter(bus => bus.busNumber === busNumber);
+    }
+  
+    // Time filter
+    if (timeFilter) {
+      filtered = filtered.filter(bus =>
+        bus.route.some(stop => getTimePeriod(stop.time) === timeFilter)
+      );
+    }
+  
+    displayResults(filtered, searchType);
   }
-
-  function populateStops() {
-    const stops = [...new Set(busRoutes.flatMap(bus => bus.route.map(r => r.stop)))];
-    stops.forEach(stop => {
-      const option1 = document.createElement("option");
-      option1.textContent = stop;
-      const option2 = option1.cloneNode(true);
-      sourceSelect.appendChild(option1);
-      destinationSelect.appendChild(option2);
+  
+  function displayResults(buses, searchType) {
+    const resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = "";
+  
+    if (buses.length === 0) {
+      resultsDiv.innerHTML = "<p>No matching buses found.</p>";
+      return;
+    }
+  
+    buses.forEach((bus, index) => {
+      const card = document.createElement("div");
+      card.className = "bus-card";
+  
+      const extraInfo = (searchType === "source-destination")
+        ? `<p><strong>Stops:</strong> ${bus.stopCount}</p>
+           <p><strong>Duration:</strong> ${formatDuration(bus.duration)}</p>`
+        : "";
+  
+      const initialRoute = `
+        <div class="route-summary">
+          <p><strong>Source:</strong> ${bus.route[0].stop}</p>
+          <p><strong>Destination:</strong> ${bus.route[bus.route.length - 1].stop}</p>
+          <button class="show-full-route" onclick="toggleFullRoute(${index})">Full Route</button>
+        </div>
+      `;
+  
+      const fullRoute = `
+        <div class="map-route" id="route-${index}" style="display: none;">
+          ${bus.route.map((r, i) => `
+            <div class="stop" style="animation-delay: ${i * 0.2}s;">
+              <strong>${r.stop}</strong> – ${r.time}
+            </div>
+          `).join("")}
+        </div>
+      `;
+  
+      const info = `
+        <div class="bus-info">
+          <div class="bus-image" style="background-image: url('${bus.image}')"></div>
+          <div class="bus-details">
+            <h3>${bus.busName} (${bus.busNumber})</h3>
+            <p><strong>Contact:</strong> ${bus.contact}</p>
+            <p><strong>Notice:</strong> ${bus.notice}</p>
+            ${extraInfo}
+          </div>
+        </div>
+        ${initialRoute}
+        ${fullRoute}
+      `;
+  
+      card.innerHTML = info;
+      resultsDiv.appendChild(card);
     });
   }
-
-  function getTimePeriod(timeStr) {
-    const [hourStr, minutePart] = timeStr.split(":");
-    const hour = parseInt(hourStr);
-    const isPM = minutePart.includes("PM");
-
-    const militaryHour = isPM ? (hour % 12) + 12 : (hour % 12);
-    if (militaryHour >= 5 && militaryHour < 12) return "morning";
-    if (militaryHour >= 12 && militaryHour < 17) return "afternoon";
-    if (militaryHour >= 17 && militaryHour <= 22) return "evening";
-    return "other";
+  
+  // Toggle function to show/hide full route
+  function toggleFullRoute(index) {
+    const routeElement = document.getElementById(`route-${index}`);
+    const button = event.target;
+  
+    if (routeElement.style.display === "none") {
+      routeElement.style.display = "block";
+      button.textContent = "Hide Full Route";
+    } else {
+      routeElement.style.display = "none";
+      button.textContent = "Full Route";
+    }
   }
-
-  function searchRoutes() {
-  const searchType = searchTypeSelect.value;
-  const timeFilter = document.getElementById("timeFilter").value;
-  let filtered = [];
-
-  if (searchType === "source-destination") {
-    const source = sourceSelect.value;
-    const destination = destinationSelect.value;
-
-    filtered = busRoutes
-      .map(bus => {
-        const stops = bus.route.map(r => r.stop);
-        const srcIdx = stops.indexOf(source);
-        const destIdx = stops.indexOf(destination);
-        if (srcIdx !== -1 && destIdx !== -1 && srcIdx < destIdx) {
-          // Add computed data
-          const startTime = convertToMinutes(bus.route[srcIdx].time);
-          const endTime = convertToMinutes(bus.route[destIdx].time);
-          return {
-            ...bus,
-            stopCount: destIdx - srcIdx,
-            duration: endTime - startTime,
-            srcIdx,
-            destIdx
-          };
-        }
-        return null;
-      })
-      .filter(bus => bus !== null);
-
-  } else if (searchType === "bus-name") {
-    const busName = document.getElementById("busName").value.trim().toLowerCase();
-    filtered = busRoutes.filter(bus => bus.busName.toLowerCase().includes(busName));
-
-  } else if (searchType === "bus-number") {
-    const busNumber = document.getElementById("busNumber").value.trim();
-    filtered = busRoutes.filter(bus => bus.busNumber === busNumber);
+  
+  
+  
+  function convertToMinutes(timeStr) {
+    const [time, period] = timeStr.split(" ");
+    let [hour, minute] = time.split(":").map(Number);
+    if (period === "PM" && hour !== 12) hour += 12;
+    if (period === "AM" && hour === 12) hour = 0;
+    return hour * 60 + minute;
   }
-
-  // Time filter
-  if (timeFilter) {
-    filtered = filtered.filter(bus =>
-      bus.route.some(stop => getTimePeriod(stop.time) === timeFilter)
-    );
+  
+  function formatDuration(mins) {
+    const h = Math.floor(mins / 60);
+    const m = mins % 60;
+    return `${h > 0 ? h + " hr " : ""}${m} min`;
   }
-
-  displayResults(filtered, searchType);
-}
-
-function displayResults(buses, searchType) {
-  const resultsDiv = document.getElementById("results");
-  resultsDiv.innerHTML = "";
-
-  if (buses.length === 0) {
-    resultsDiv.innerHTML = "<p>No matching buses found.</p>";
-    return;
-  }
-
-  buses.forEach((bus, index) => {
-    const card = document.createElement("div");
-    card.className = "bus-card";
-
-    const extraInfo = (searchType === "source-destination")
-      ? `<p><strong>Stops:</strong> ${bus.stopCount}</p>
-         <p><strong>Duration:</strong> ${formatDuration(bus.duration)}</p>`
-      : "";
-
-    const initialRoute = `
-      <div class="route-summary">
-        <p><strong>Source:</strong> ${bus.route[0].stop}</p>
-        <p><strong>Destination:</strong> ${bus.route[bus.route.length - 1].stop}</p>
-        <button class="show-full-route" onclick="toggleFullRoute(${index})">Full Route</button>
-      </div>
-    `;
-
-    const fullRoute = `
-      <div class="map-route" id="route-${index}" style="display: none;">
-        ${bus.route.map((r, i) => `
-          <div class="stop" style="animation-delay: ${i * 0.2}s;">
-            <strong>${r.stop}</strong> – ${r.time}
-          </div>
-        `).join("")}
-      </div>
-    `;
-
-    const info = `
-      <div class="bus-info">
-        <div class="bus-image" style="background-image: url('${bus.image}')"></div>
-        <div class="bus-details">
-          <h3>${bus.busName} (${bus.busNumber})</h3>
-          <p><strong>Contact:</strong> ${bus.contact}</p>
-          <p><strong>Notice:</strong> ${bus.notice}</p>
-          ${extraInfo}
-        </div>
-      </div>
-      ${initialRoute}
-      ${fullRoute}
-    `;
-
-    card.innerHTML = info;
-    resultsDiv.appendChild(card);
-  });
-}
-
-// Toggle function to show/hide full route
-function toggleFullRoute(index) {
-  const routeElement = document.getElementById(`route-${index}`);
-  const button = event.target;
-
-  if (routeElement.style.display === "none") {
-    routeElement.style.display = "block";
-    button.textContent = "Hide Full Route";
-  } else {
-    routeElement.style.display = "none";
-    button.textContent = "Full Route";
-  }
-}
-
-
-
-function convertToMinutes(timeStr) {
-  const [time, period] = timeStr.split(" ");
-  let [hour, minute] = time.split(":").map(Number);
-  if (period === "PM" && hour !== 12) hour += 12;
-  if (period === "AM" && hour === 12) hour = 0;
-  return hour * 60 + minute;
-}
-
-function formatDuration(mins) {
-  const h = Math.floor(mins / 60);
-  const m = mins % 60;
-  return `${h > 0 ? h + " hr " : ""}${m} min`;
-}
-
-
-  // Initial setup
-  populateStops();
-  updateSearchForm();
-</script>
+  
+  
+    // Initial setup
+    populateStops();
+    updateSearchForm();
+  </script>
 
 </body>
 </html>
